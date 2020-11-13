@@ -1,0 +1,27 @@
+# How to use :
+# docker-compose up -d
+# docker-compose down
+# --------------------------------------------------------------------------------
+
+version: '2'
+services:
+  kali:
+    hostname: KALI
+    container_name: docker_kali
+    build: 
+      context: .
+      dockerfile: ./Dockerfile
+    networks: 
+      vpn:
+        ipv4_address: 172.168.40.2
+    restart: unless-stopped
+
+
+networks:
+  vpn:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet:  172.168.40.0/24
+          gateway: 172.168.40.1
