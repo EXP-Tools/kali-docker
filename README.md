@@ -3,3 +3,7 @@
 
 
 https://github.com/lyy289065406/SecLists/blob/master/Passwords/UserPassCombo-Jay.txt
+
+
+
+msfconsole

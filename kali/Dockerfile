@@ -7,7 +7,7 @@ RUN apt-get update && \
 # 全工具安装需 20G 硬盘
 # RUN apt-get install kali-linux-everything
 
-# 安装常用工具
+# 常用工具安装
 RUN apt-get install -y \
     vim procps net-tools netcat tcpdump \
     # 渗透框架
@@ -25,6 +25,8 @@ RUN apt-get install -y \
     # Web 应用扫描器
     skipfish
 
+ADD ./database.yml /usr/share/metasploit-framework/config/database.yml
+RUN msfdb init
 
-ADD ./init.sh /init.sh
-CMD ["/init.sh"]
+WORKDIR /
+CMD ["/bin/bash"]
