@@ -9,7 +9,7 @@ RUN apt-get update && \
 
 # 常用工具安装
 RUN apt-get install -y \
-    vim procps net-tools netcat tcpdump \
+    vim procps net-tools telnet netcat tcpdump ftp \
     # 渗透框架
     metasploit-framework \
     # 密码爆破
@@ -25,8 +25,12 @@ RUN apt-get install -y \
     # Web 应用扫描器
     skipfish
 
-ADD ./database.yml /usr/share/metasploit-framework/config/database.yml
-RUN msfdb init
+
+ADD ./wait-for-it.sh /opt/wait-for-it.sh
+ADD ./msfdb /usr/bin/msfdb
+RUN chmod a+x /opt/wait-for-it.sh && \
+    chmod a+x /usr/bin/msfdb
+
 
 WORKDIR /
 CMD ["/bin/bash"]
