@@ -1,6 +1,8 @@
 #!/bin/sh
 
-DOCKER_ID=`docker ps -aq --filter name=docker_kali`
+CONTAINER_NAME = "docker_kali"
+
+DOCKER_ID=`docker ps -aq --filter name=${CONTAINER_NAME}`
 if [ -z "${DOCKER_ID}" ]; then
 
     echo "The kali is building ..."
@@ -12,7 +14,7 @@ if [ -z "${DOCKER_ID}" ]; then
     echo "All is up"
 fi
 
-
+DOCKER_ID=`docker ps -aq --filter name=${CONTAINER_NAME}`
 if [ ! -z "${DOCKER_ID}" ]; then
 
     echo "Init msf db ..."
