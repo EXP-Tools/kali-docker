@@ -60,10 +60,10 @@ kali-docker
 通过修改 [`kali/Dockerfile`](kali/Dockerfile) 文件可以自定义期望安装的工具，默认已安装的渗透工具清单如下：
 
 | 工具 | 描述 | 使用 |
-|:----:|:----:|:----:|
-| [metasploit-framework](https://github.com/rapid7/metasploit-framework) | MSF 渗透框架 | 执行 `msfconsole` 命令可进入 msf 环境，详见[官方文档](https://tools.kali.org/exploitation-tools/metasploit-framework) |
+|:----:|:----:|:----|
+| [metasploit-framework](https://github.com/rapid7/metasploit-framework) | MSF 渗透框架 | 执行 `msfconsole` 命令可进入 msf 环境<br/>详见[官方文档](https://tools.kali.org/exploitation-tools/metasploit-framework) |
 | [hydra](https://github.com/vanhauser-thc/thc-hydra) | 账密爆破工具 | [官方文档](https://tools.kali.org/password-attacks/hydra) |
-| [seclists](https://github.com/danielmiessler/SecLists) | 安全列表（常用账密清单等） | 清单目录在 `/usr/share/seclists`，详见[官方文档](https://tools.kali.org/password-attacks/seclists) |
+| [seclists](https://github.com/danielmiessler/SecLists) | 安全列表（常用账密清单等） | 清单目录在 `/usr/share/seclists`<br/>详见[官方文档](https://tools.kali.org/password-attacks/seclists) |
 | [nmap](https://github.com/nmap/nmap) | 网络嗅探 | [官方文档](https://tools.kali.org/information-gathering/nmap) |
 | [aircrack-ng](https://github.com/aircrack-ng/aircrack-ng) | WIFI 扫描 | [官方文档](https://tools.kali.org/wireless-attacks/aircrack-ng) |
 | [lynis](https://github.com/CISOfy/lynis) | 合规扫描 | [官方文档](https://tools.kali.org/vulnerability-analysis/lynis) |
