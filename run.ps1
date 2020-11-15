@@ -17,8 +17,8 @@ $DOCKER_ID = (docker ps -aq --filter name=${CONTAINER_NAME})
 if(![String]::IsNullOrEmpty(${DOCKER_ID})) {
 
     echo "Init msf db ..."
-    docker exec ${DOCKER_ID} /bin/bash -c "/usr/bin/msfdb init"
+    docker exec -u root ${DOCKER_ID} /bin/bash -c "/usr/bin/msfdb init"
 
     echo "Openning the kali terminal ..."
-    docker exec -it ${DOCKER_ID} /bin/bash
+    docker exec -it -u root ${DOCKER_ID} /bin/bash
 }
