@@ -31,7 +31,7 @@ RUN apt-get install -y \
     # Web 应用扫描
     skipfish
 
-# Linux 本地提权检查
+# Linux 本地提权检查工具
 RUN git clone -b master --single-branch https://github.com/rebootuser/LinEnum /usr/share/LinEnum
 # ----------------------------------------------------------------------------------------
 
