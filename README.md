@@ -66,7 +66,7 @@ kali-docker
 | [hydra](https://github.com/vanhauser-thc/thc-hydra) | 账密爆破工具 | [官方文档](https://tools.kali.org/password-attacks/hydra) |
 | [seclists](https://github.com/danielmiessler/SecLists) | 安全列表（常用账密清单等） | 清单目录在 `/usr/share/seclists`<br/>详见[官方文档](https://tools.kali.org/password-attacks/seclists) |
 | [nmap](https://github.com/nmap/nmap) | 网络嗅探 | [官方文档](https://tools.kali.org/information-gathering/nmap) |
-| [LinEnum](https://github.com/rebootuser/LinEnum) | Linux 本地提权检查 | shell 脚本在 `/usr/share/LinEnum/LinEnum.sh` |
+| [LinEnum](https://github.com/rebootuser/LinEnum) | Linux 本地提权检查工具 | shell 脚本在 `/usr/share/LinEnum/LinEnum.sh` |
 | [aircrack-ng](https://github.com/aircrack-ng/aircrack-ng) | WIFI 扫描 | [官方文档](https://tools.kali.org/wireless-attacks/aircrack-ng) |
 | [lynis](https://github.com/CISOfy/lynis) | 合规扫描 | [官方文档](https://tools.kali.org/vulnerability-analysis/lynis) |
 | [wpscan](https://github.com/wpscanteam/wpscan) | WordPress 扫描 | [官方文档](https://tools.kali.org/web-applications/wpscan) |
