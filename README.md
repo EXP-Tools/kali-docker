@@ -72,4 +72,4 @@ kali-docker
 | [wpscan](https://github.com/wpscanteam/wpscan) | WordPress 扫描 | [官方文档](https://tools.kali.org/web-applications/wpscan) |
 | [skipfish](https://github.com/spinkham/skipfish) | Web 应用扫描 | [官方文档](https://tools.kali.org/web-applications/skipfish) |
 
-> 也可以通过 `apt-get install kali-linux-everything` 命令安装 kali 全家桶工具，在 [https://tools.kali.org/](https://tools.kali.org/) 可以找到大部分 kali 工具的使用指引
+> 可通过 `apt-get install kali-linux-everything` 命令安装 kali 全家桶工具，在 [https://tools.kali.org/](https://tools.kali.org/) 可找到大部分 kali 工具的使用指引
